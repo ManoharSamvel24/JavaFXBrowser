@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXBrowser.jnlp">
+  <information>
+    <title>JavaFXBrowser</title>
+    <vendor>SAMUEL</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFXBrowser.jar" size="14241" download="eager" />
+    <jar href="lib\ikonli-core-2.4.0.jar" size="9020" download="eager" />
+    <jar href="lib\ikonli-fontawesome-pack-2.4.0.jar" size="678220" download="eager" />
+    <jar href="lib\ikonli-javafx-2.4.0.jar" size="70792" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="javafxbrowser.JavaFXBrowser"  name="JavaFXBrowser" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane prefHeight="570.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxbrowser.FXMLDocumentController">
+
+    <center>
+        <VBox fillWidth="true" spacing="12">
+            <padding>
+                <Insets bottom="12" left="12" right="12" top="12" />
+            </padding>
+            <children>
+
+                <!-- Search Row -->
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <JFXTextField fx:id="textField" focusColor="#3967fc" focusTraversable="false" onAction="#loadPage" promptText="Search" styleClass="textfield" HBox.hgrow="ALWAYS" />
+                        
+                        <JFXButton fx:id="settingBtn" focusTraversable="false" onAction="#openSettings" prefHeight="40.0" prefWidth="50.0" ripplerFill="#a6a6a6" styleClass="settingBtn" text="">
+                            <graphic>
+                                <FontIcon iconLiteral="fa-gear" iconSize="22" styleClass="icon" />
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+
+                <!-- Buttons Row -->
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <JFXButton onAction="#loadPage" prefHeight="40.0" prefWidth="50.0" styleClass="btn">
+                            <graphic><FontIcon iconLiteral="fa-search" iconSize="22" styleClass="icon" /></graphic>
+                            <tooltip><Tooltip text="Search" /></tooltip>
+                        </JFXButton>
+
+                        <JFXButton onAction="#refreshPage" prefHeight="40.0" prefWidth="50.0" styleClass="btn">
+                            <graphic><FontIcon iconLiteral="fa-refresh" iconSize="22" styleClass="icon" /></graphic>
+                            <tooltip><Tooltip text="Refresh" /></tooltip>
+                        </JFXButton>
+
+                        <JFXButton onAction="#zoomIn" prefHeight="40.0" prefWidth="50.0" styleClass="btn">
+                            <graphic><FontIcon iconLiteral="fa-search-plus" iconSize="22" styleClass="icon" /></graphic>
+                            <tooltip><Tooltip text="Zoom In" /></tooltip>
+                        </JFXButton>
+
+                        <JFXButton onAction="#zoomOut" prefHeight="40.0" prefWidth="50.0" styleClass="btn">
+                            <graphic><FontIcon iconLiteral="fa-search-minus" iconSize="22" styleClass="icon" /></graphic>
+                            <tooltip><Tooltip text="Zoom Out" /></tooltip>
+                        </JFXButton>
+
+                        <JFXButton onAction="#displayHistory" prefHeight="40.0" prefWidth="50.0" styleClass="btn">
+                            <graphic><FontIcon iconLiteral="fa-history" iconSize="22" styleClass="icon" /></graphic>
+                            <tooltip><Tooltip text="History" /></tooltip>
+                        </JFXButton>
+
+                        <JFXButton onAction="#back" prefHeight="40.0" prefWidth="50.0" styleClass="btn">
+                            <graphic><FontIcon iconLiteral="fa-arrow-circle-o-left" iconSize="22" styleClass="icon" /></graphic>
+                            <tooltip><Tooltip text="Backward" /></tooltip>
+                        </JFXButton>
+
+                        <JFXButton onAction="#forward" prefHeight="40.0" prefWidth="50.0" styleClass="btn">
+                            <graphic><FontIcon iconLiteral="fa-arrow-circle-o-right" iconSize="22" styleClass="icon" /></graphic>
+                            <tooltip><Tooltip text="Forward" /></tooltip>
+                        </JFXButton>
+                    </children>
+                </HBox>
+
+                <!-- Progress Bar -->
+                <ProgressBar fx:id="progressBar" maxWidth="Infinity" prefHeight="4.0" styleClass="progressBar" visible="false" />
+                
+                <!-- WebView -->
+                <WebView fx:id="webView" VBox.vgrow="ALWAYS" />
+
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

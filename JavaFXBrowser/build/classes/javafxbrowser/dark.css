@@ -1,0 +1,58 @@
+.root {
+    -fx-background-color: #121212; /* dark bg */
+    -fx-text-fill: #E0E0E0;
+}
+
+/* Buttons */
+.btn {
+    -fx-background-color: #3949AB;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 40px;
+}
+.btn:hover {
+    -fx-background-color: #5C6BC0;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+.btn:pressed {
+    -fx-background-color: #283593;
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+/* Settings button (round) */
+.settingBtn {
+    -fx-background-color: #1E1E1E;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+/* Textfield */
+.textfield {
+    -fx-background-color: #1E1E1E;
+    -fx-text-fill: #E0E0E0;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-prompt-text-fill: #9E9E9E;
+    -fx-padding: 5 10 5 10;
+}
+
+/* Progress Bar */
+.progressBar {
+    -fx-background-color: transparent;
+    -fx-pref-height: 4px;
+}
+.progressBar .track {
+    -fx-background-color: transparent;
+}
+.progressBar .bar {
+    -fx-background-color: #81D4FA;
+}
+
+/* Icons */
+.icon {
+    -fx-icon-color: #E0E0E0;
+}
