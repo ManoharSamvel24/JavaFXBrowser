@@ -21,10 +21,10 @@ JavaFXBrowser is a lightweight desktop browser built with JavaFX featuring URL n
 
 ## Screenshots 📸
 
-![Screenshot Light Theme](light-theme-screenshot.png)  
+![Screenshot Light Theme](https://raw.githubusercontent.com/ManoharSamvel24/JavaFXBrowser/refs/heads/main/JavaFXBrowser/outputs/Screenshot%20(15).png)  
 *Light theme with browsing history panel*
 
-![Screenshot Dark Theme](dark-theme-screenshot.png)  
+![Screenshot Dark Theme](https://raw.githubusercontent.com/ManoharSamvel24/JavaFXBrowser/refs/heads/main/JavaFXBrowser/outputs/Screenshot%20(16).png)  
 *Dark theme with custom settings*
 
 ---
